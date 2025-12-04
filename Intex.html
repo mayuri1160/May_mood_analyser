@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May’s Mood Analyser 💜</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbe8ff, #e8f0ff);
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #b573f3;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 380px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .happy { background: #ffb3d9; }
+        .sad { background: #a3c4f3; }
+        .angry { background: #ff9e9e; }
+        .calm { background: #c2f0c2; }
+        .stress { background: #ffd39e; }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>May’s Mood Analyser 💜</h1>
+    <p>Select how you feel right now:</p>
+
+    <div class="container">
+        <button class="button happy" onclick="showMood('happy')">😊 Happy</button>
+        <button class="button sad" onclick="showMood('sad')">😔 Sad</button>
+        <button class="button angry" onclick="showMood('angry')">😡 Angry</button>
+        <button class="button calm" onclick="showMood('calm')">😌 Calm</button>
+        <button class="button
